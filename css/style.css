@@ -1537,25 +1537,40 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 @media (max-width: 1080px) {
   .nav-menu {
     position: fixed;
-    top: 80px; right: -100%;
-    width: 280px; height: calc(100vh - 80px);
+    top: 110px; right: -100%;
+    width: 280px; height: calc(100vh - 110px);
     background: var(--maroon);
     flex-direction: column;
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem;
     align-items: flex-start;
     justify-content: flex-start;
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -10px 0 30px rgba(0,0,0,0.3);
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 2px solid var(--orange);
     overflow-y: auto;
     z-index: 999;
   }
-  .navbar.scrolled .nav-menu { top: 70px; height: calc(100vh - 70px); }
+  .navbar.scrolled .nav-menu { 
+    top: 84px; 
+    height: calc(100vh - 84px); 
+  }
   
   .nav-menu.active { right: 0; }
   .hamburger { display: flex; }
   
-  .nav-link { font-size: 1.05rem; padding: 1rem; width: 100%; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .nav-link { 
+    font-size: 1rem; 
+    padding: 0.9rem 1.2rem; 
+    width: 100%; 
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.08); 
+  }
+  .nav-link:hover, .nav-link.active {
+    background: rgba(255,255,255,0.1);
+    color: var(--gold);
+  }
   .nav-link.active::after { display: none; }
   .nav-dropdown { width: 100%; }
   .dropdown-menu {
@@ -1566,9 +1581,17 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     display: none;
     padding: 0;
     margin: 5px 0;
+    border-left: 3px solid var(--orange);
   }
   .nav-dropdown:hover .dropdown-menu { display: block; }
-  .dropdown-menu a { padding: 0.8rem 1.5rem; color: rgba(255,255,255,0.7); border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.03); }
+  .dropdown-menu a { 
+    padding: 0.8rem 1.5rem; 
+    color: rgba(255,255,255,0.7); 
+    font-size: 0.9rem;
+    border-radius: 0; 
+    border-bottom: 1px solid rgba(255,255,255,0.03); 
+  }
+  .dropdown-menu a:hover { color: var(--gold); }
   .nav-btn-cta { width: 100%; margin: 1.5rem 0 0 0; text-align: center; }
 
   /* Card Layout Fixes (Tablet) */
@@ -1592,12 +1615,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .hero-cta { justify-content: center; }
   .hero-scroll-indicator { display: none; }
   .stats-grid, .services-grid, .branches-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  .nav-container { height: 70px; }
+  .nav-container { height: 70px; padding: 0 1.2rem; }
   .navbar.scrolled .nav-container { height: 65px; }
-  .nav-logo-img { height: 42px; }
+  .nav-logo-img { height: 44px; }
   .navbar.scrolled .nav-logo-img { height: 38px; }
-  .nav-menu { top: 70px; height: calc(100vh - 70px); }
-  .navbar.scrolled .nav-menu { top: 65px; height: calc(100vh - 65px); }
+  .nav-menu { top: 94px; height: calc(100vh - 94px); }
+  .navbar.scrolled .nav-menu { top: 77px; height: calc(100vh - 77px); }
 
   /* Card Spacing Refinements */
   .service-card, .loan-card, .branch-card { padding: 1.8rem 1.2rem; }
