@@ -66,25 +66,31 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: var(--maroon);
-  padding: 0;
-  transition: var(--transition);
+  background: linear-gradient(to bottom, #5c1700 0%, #f36a06 100%);
+  padding: 12px 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 .navbar.scrolled {
-  background: rgba(122, 31, 0, 0.97);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  padding: 6px 0;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.5);
 }
 .nav-container {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
-  gap: 1.5rem;
+  height: 86px;
+  background: var(--white);
+  border-radius: 100px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+.navbar.scrolled .nav-container {
+  height: 72px;
+  max-width: 1200px;
 }
 /* Logo Styles */
 .nav-logo {
@@ -96,19 +102,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .nav-logo-img {
-  height: 60px;
+  height: 68px;
   width: auto;
   display: block;
+  border-radius: var(--radius-lg);
   transition: all 0.4s ease;
-  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
-}
-
-.navbar.scrolled .nav-container {
-  height: 74px;
 }
 
 .navbar.scrolled .nav-logo-img {
-  height: 50px;
+  height: 56px;
 }
 
 .footer-logo {
@@ -121,6 +123,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   height: 70px;
   width: auto;
   display: block;
+  border-radius: var(--radius-lg);
   filter: drop-shadow(0 2px 10px rgba(0,0,0,0.3));
 }
 
@@ -132,19 +135,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   justify-content: flex-end;
 }
 .nav-link {
-  color: rgba(255,255,255,0.88);
-  font-size: 0.82rem;
-  font-weight: 500;
-  padding: 0.5rem 0.65rem;
-  border-radius: var(--radius-sm);
+  color: var(--maroon);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.6rem 0.9rem;
+  border-radius: 50px;
   position: relative;
   white-space: nowrap;
   transition: var(--transition);
   display: flex; align-items: center; gap: 0.3rem;
 }
 .nav-link:hover, .nav-link.active {
-  color: var(--white);
-  background: rgba(255,255,255,0.1);
+  color: var(--orange);
+  background: var(--cream);
 }
 .nav-link.active::after {
   content: '';
@@ -155,17 +158,20 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   border-radius: 2px;
 }
 .nav-btn-cta {
-  background: var(--orange);
-  color: var(--white) !important;
-  padding: 0.55rem 1.2rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem;
-  font-weight: 600;
-  margin-left: 0.5rem;
+  background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
+  color: var(--white);
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 12px rgba(122, 31, 0, 0.2);
   transition: var(--transition);
-  flex-shrink: 0;
 }
-.nav-btn-cta:hover { background: var(--orange-hover); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(243,106,6,0.4); }
+.nav-btn-cta:hover {
+  background: var(--orange);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(243,106,6,0.3);
+}
 
 /* Dropdown */
 .nav-dropdown { position: relative; }
@@ -216,7 +222,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--white);
+  background: var(--maroon);
   border-radius: 2px;
   transition: var(--transition);
 }
