@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <!-- Swiper Slider CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Preload Hero Images for Performance -->
+  <link rel="preload" href="assets/hero_bank_hall.png" as="image" />
+  <link rel="preload" href="assets/hero_digital.png" as="image" />
+  <link rel="preload" href="assets/hero_mahaveer.png" as="image" />
 </head>
 <body>
 
@@ -70,7 +75,7 @@
         
         <!-- SLIDE 1: TRUSTED BANKING -->
         <div class="swiper-slide hero-slide">
-          <div class="slide-bg" style="background-image: url('assets/hero_professional.png');"></div>
+          <div class="slide-bg" style="background-image: url('assets/hero_bank_hall.png');"></div>
           <div class="slide-overlay"></div>
           <div class="container slide-container">
             <div class="slide-content" data-aos="fade-up">
@@ -111,31 +116,28 @@
           </div>
         </div>
 
-        <!-- SLIDE 3: LOANS -->
+        <!-- SLIDE 3: MAHAVEER BANK -->
         <div class="swiper-slide hero-slide">
-          <div class="slide-bg" style="background-image: url('assets/hero_india_bank.png'); background-position: center; background-size: cover;"></div>
+          <div class="slide-bg" style="background-image: url('assets/hero_mahaveer.png');"></div>
           <div class="slide-overlay"></div>
           <div class="container slide-container">
             <div class="slide-content">
               <div class="hero-eyebrow">
                 <span class="hero-dot"></span>
-                <span>Empowering Your Dreams</span>
+                <span>Our Heritage, Your Growth</span>
               </div>
-              <h1 class="hero-heading">Accelerate Your<br/><span class="hero-highlight">Ambition With Loans.</span></h1>
-              <p class="hero-intro">From Gold Loans to Housing and Business, we provide the capital you need with flexible terms and low rates.</p>
+              <h1 class="hero-heading">A Legacy of Trust,<br/><span class="hero-highlight">A Future of Growth.</span></h1>
+              <p class="hero-intro">From our humble beginnings to serving thousands of satisfied customers across Hyderabad. Join our growing family today.</p>
               <div class="hero-cta">
-                <a href="loans.html" class="btn btn-primary"><i class="fas fa-hand-holding-dollar"></i> Explore Loans</a>
-                <a href="enquiry.html" class="btn btn-secondary">Apply Now</a>
+                <a href="about.html" class="btn btn-primary"><i class="fas fa-university"></i> About the Bank</a>
+                <a href="branches.html" class="btn btn-secondary">Find a Branch</a>
               </div>
             </div>
           </div>
         </div>
 
       </div>
-      <!-- Swiper Controls -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <!-- Swiper Controls Removed for Clean Look -->
       
       <div class="hero-scroll-indicator">
         <div class="scroll-dot"></div>
