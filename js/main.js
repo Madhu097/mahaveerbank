@@ -50,13 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger?.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu?.classList.toggle('active');
+    document.body.style.overflow = navMenu?.classList.contains('active') ? 'hidden' : '';
   });
 
-  // Close menu on link click
-  document.querySelectorAll('.nav-link, .nav-btn-cta').forEach(link => {
+  // Close menu on link click (Mobile)
+  document.querySelectorAll('.nav-link, .nav-btn-cta, .dropdown-menu a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger?.classList.remove('active');
       navMenu?.classList.remove('active');
+      document.body.style.overflow = '';
     });
   });
 
