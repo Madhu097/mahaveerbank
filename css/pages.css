@@ -1,0 +1,304 @@
+   MAHAVEER BANK – INNER PAGES STYLESHEET
+   ================================================================ */
+
+/* ---- LOANS PAGE ---- */
+.loan-detail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.loan-item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  border: 1px solid var(--divider);
+  margin-bottom: 2rem;
+  transition: var(--transition);
+  scroll-margin-top: 100px;
+}
+.loan-item:hover { box-shadow: var(--shadow-md); }
+.loan-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--cream-alt);
+}
+.loan-item-icon {
+  width: 64px; height: 64px;
+  background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; color: var(--white);
+  flex-shrink: 0;
+}
+.loan-item-header h2 {
+  font-family: var(--font-head);
+  font-size: 1.4rem; font-weight: 800;
+  color: var(--maroon);
+}
+.loan-item-header p { font-size: 0.9rem; color: var(--text-secondary); }
+.loan-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.benefit-item {
+  display: flex; align-items: flex-start; gap: 0.8rem;
+  background: var(--cream); padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--divider);
+}
+.benefit-item i { color: var(--orange); margin-top: 2px; }
+.benefit-item strong { display: block; font-size: 0.85rem; color: var(--maroon); }
+.benefit-item span { font-size: 0.78rem; color: var(--text-secondary); }
+.apply-loan-btn { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+
+/* Sidebar */
+.sidebar-widget {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  border: 1px solid var(--divider);
+  margin-bottom: 1.5rem;
+}
+.sidebar-widget h3 {
+  font-family: var(--font-head);
+  font-size: 1rem; font-weight: 700;
+  color: var(--maroon);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--cream-alt);
+}
+.sidebar-widget ul li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--divider);
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.sidebar-widget ul li:last-child { border-bottom: none; }
+.sidebar-widget ul li a { font-size: 0.88rem; color: var(--text-primary); transition: var(--transition); }
+.sidebar-widget ul li a:hover { color: var(--orange); }
+.sidebar-widget ul li i { color: var(--orange); font-size: 0.75rem; }
+.sidebar-cta {
+  background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  text-align: center;
+}
+.sidebar-cta h3 { font-family: var(--font-head); font-size: 1.1rem; margin-bottom: 0.8rem; border: none; color: var(--white); }
+.sidebar-cta p { font-size: 0.85rem; color: rgba(255,255,255,0.75); margin-bottom: 1.2rem; }
+.sidebar-cta .btn-primary { width: 100%; justify-content: center; }
+
+/* ---- DEPOSITS PAGE ---- */
+.deposit-comparison {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--divider);
+  margin-bottom: 2rem;
+}
+.deposit-comparison-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  background: var(--maroon);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0;
+}
+.deposit-comparison-header div { padding: 1rem 1.5rem; }
+.deposit-comparison-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  border-bottom: 1px solid var(--divider);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.deposit-comparison-row:last-child { border-bottom: none; }
+.deposit-comparison-row:hover { background: var(--cream); }
+.deposit-comparison-row div { padding: 0.9rem 1.5rem; }
+.deposit-comparison-row div:not(:first-child) { text-align: center; color: var(--text-secondary); }
+.deposit-comparison-row div:first-child { color: var(--text-primary); font-weight: 500; }
+.check-icon { color: var(--orange) !important; }
+.cross-icon { color: #ccc !important; }
+
+/* ---- ACCOUNTS PAGE ---- */
+.accounts-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.account-tab {
+  padding: 0.8rem 2rem;
+  background: var(--white);
+  border: 2px solid var(--divider);
+  border-radius: var(--radius-md);
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.account-tab.active {
+  background: var(--maroon);
+  color: var(--white);
+  border-color: var(--maroon);
+}
+.account-tab:hover:not(.active) { border-color: var(--orange); color: var(--orange); }
+.account-panel { display: none; }
+.account-panel.active { display: block; }
+
+/* ---- SERVICES PAGE ---- */
+.services-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.service-detail-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--divider);
+  transition: var(--transition);
+  scroll-margin-top: 100px;
+}
+.service-detail-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: var(--orange); }
+.service-detail-card .service-icon { margin-bottom: 1.2rem; }
+.service-detail-card h3 { font-family: var(--font-head); font-size: 1.05rem; font-weight: 700; color: var(--maroon); margin-bottom: 0.7rem; }
+.service-detail-card p { font-size: 0.88rem; color: var(--text-secondary); }
+
+/* ---- BRANCHES PAGE ---- */
+.branch-detail-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--divider);
+  transition: var(--transition);
+}
+.branch-detail-card:hover { box-shadow: var(--shadow-md); }
+.branch-map-placeholder {
+  height: 180px;
+  background: linear-gradient(135deg, var(--cream-alt), var(--cream-dark));
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.branch-map-placeholder:hover { background: rgba(243,106,6,0.08); }
+.branch-map-placeholder i { font-size: 2.5rem; color: var(--maroon); opacity: 0.5; }
+.branch-map-placeholder span { font-size: 0.82rem; color: var(--text-secondary); }
+.branch-detail-body { padding: 1.5rem; }
+.branch-detail-body h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--maroon); margin-bottom: 0.8rem; }
+.branch-info { display: flex; flex-direction: column; gap: 0.6rem; }
+.branch-info-item { display: flex; align-items: flex-start; gap: 0.7rem; font-size: 0.85rem; color: var(--text-secondary); }
+.branch-info-item i { color: var(--orange); margin-top: 2px; flex-shrink: 0; }
+.branch-info-item a { color: var(--orange); font-weight: 600; }
+.branches-detail-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+
+/* ---- CAREERS PAGE ---- */
+.career-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  border: 1px solid var(--divider);
+  transition: var(--transition);
+  display: flex; align-items: flex-start; gap: 1.5rem;
+}
+.career-card:hover { box-shadow: var(--shadow-md); border-color: var(--orange); transform: translateY(-3px); }
+.career-icon { width: 52px; height: 52px; background: linear-gradient(135deg, rgba(243,106,6,0.1), rgba(229,162,42,0.1)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--orange); flex-shrink: 0; }
+.career-info { flex: 1; }
+.career-info h3 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--maroon); margin-bottom: 0.4rem; }
+.career-info p { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.8rem; }
+.career-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.career-tag { font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.8rem; border-radius: 50px; background: var(--cream-alt); color: var(--coffee); }
+
+/* ---- MEDIA PAGE ---- */
+.media-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.media-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--divider);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.media-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.media-card-body { padding: 1.5rem; }
+.media-card-body .news-tag { margin-bottom: 0.5rem; }
+.media-card h3 { font-family: var(--font-head); font-size: 0.95rem; font-weight: 700; color: var(--maroon); margin-bottom: 0.6rem; line-height: 1.4; }
+.media-card p { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem; }
+
+/* ---- ENQUIRY / CONTACT PAGE ---- */
+.enquiry-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 3rem; align-items: start; }
+.enquiry-info-card { background: linear-gradient(135deg, var(--maroon), var(--maroon-light)); color: var(--white); border-radius: var(--radius-lg); padding: 2.5rem; }
+.enquiry-info-card h3 { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; }
+.enquiry-info-list { display: flex; flex-direction: column; gap: 1rem; }
+.enquiry-info-item { display: flex; align-items: flex-start; gap: 1rem; }
+.enquiry-info-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+.enquiry-info-item strong { display: block; font-size: 0.88rem; color: rgba(255,255,255,0.9); }
+.enquiry-info-item span { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
+
+/* ---- MEDIA PAGE NEW SECTIONS ---- */
+.media-gallery-section { padding-top: 0; }
+.photo-collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px;
+}
+.collage-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+.collage-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.collage-item:hover img { transform: scale(1.05); }
+.collage-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(122,31,0,0.8), transparent);
+  opacity: 0; transition: var(--transition);
+  display: flex; align-items: flex-end; padding: 1.5rem;
+}
+.collage-item:hover .collage-overlay { opacity: 1; }
+.collage-overlay span { color: white; font-weight: 600; font-size: 0.9rem; }
+
+/* Grid Spanning for Collage */
+.collage-item.wide { grid-column: span 2; }
+.collage-item.tall { grid-row: span 2; }
+.collage-item.big { grid-column: span 2; grid-row: span 2; }
+
+/* ================================================================
+   RESPONSIVE – INNER PAGES
+   ================================================================ */
+@media (max-width: 991px) {
+  .loan-detail-grid { grid-template-columns: 1fr; }
+  .loan-benefits { grid-template-columns: 1fr; }
+  .services-detailed-grid { grid-template-columns: repeat(2, 1fr); }
+  .branches-detail-grid { grid-template-columns: repeat(3, 1fr); }
+  .media-grid { grid-template-columns: repeat(2, 1fr); }
+  .enquiry-layout { grid-template-columns: 1fr; }
+  .photo-collage { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .branches-detail-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .services-detailed-grid { grid-template-columns: 1fr; }
+  .branches-detail-grid { grid-template-columns: 1fr; }
+  .media-grid { grid-template-columns: 1fr; }
+  .career-card { flex-direction: column; }
+  .deposit-comparison-header, .deposit-comparison-row { grid-template-columns: 2fr 1fr 1fr; }
+  .photo-collage { grid-template-columns: 1fr; grid-auto-rows: 200px; }
+  .collage-item.wide, .collage-item.tall, .collage-item.big { grid-column: span 1; grid-row: span 1; }
+}

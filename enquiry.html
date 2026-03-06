@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Submit an enquiry to Mahaveer Co-operative Urban Bank – loans, deposits, accounts, and general questions." />
+  <title>Enquiry | Mahaveer Co-operative Urban Bank Ltd.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-new.png" alt="Mahaveer Bank" class="nav-logo-img" />
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown"><a href="loans.html" class="nav-link dropdown-trigger">Loans <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="loans.html#gold-loan">Gold Loan</a><a href="loans.html#business-loan">Business Loan</a></div></div>
+        <div class="nav-dropdown"><a href="deposits.html" class="nav-link dropdown-trigger">Deposits <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="deposits.html#term-deposits">Term Deposits</a></div></div>
+        <a href="accounts.html" class="nav-link">Accounts</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="branches.html" class="nav-link">Branches</a>
+        <a href="media.html" class="nav-link">Media</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enquiry.html" class="nav-btn-cta">Enquiry</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Enquiry</span></div>
+      <h1>Submit an Enquiry</h1>
+      <p>Fill the form below and our team will get back to you within 24 business hours.</p>
+    </div>
+  </section>
+
+  <section class="section" id="enquiry-main">
+    <div class="container">
+      <div class="enquiry-layout">
+        <div class="enquiry-info-card" data-aos="fade-right">
+          <h3>Why Contact Us?</h3>
+          <div class="enquiry-info-list">
+            <div class="enquiry-info-item">
+              <div class="enquiry-info-icon"><i class="fas fa-piggy-bank"></i></div>
+              <div><strong>Open a New Account</strong><span>Savings, Current, or FD Account</span></div>
+            </div>
+            <div class="enquiry-info-item">
+              <div class="enquiry-info-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+              <div><strong>Apply for a Loan</strong><span>Gold, Business, Housing, Vehicle Loan</span></div>
+            </div>
+            <div class="enquiry-info-item">
+              <div class="enquiry-info-icon"><i class="fas fa-vault"></i></div>
+              <div><strong>Safe Deposit Locker</strong><span>Secure your valuables with us</span></div>
+            </div>
+            <div class="enquiry-info-item">
+              <div class="enquiry-info-icon"><i class="fas fa-credit-card"></i></div>
+              <div><strong>Debit Card & Services</strong><span>Card issue, UPI, digital payments</span></div>
+            </div>
+            <div class="enquiry-info-item">
+              <div class="enquiry-info-icon"><i class="fas fa-question-circle"></i></div>
+              <div><strong>General Queries</strong><span>Any other banking questions</span></div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.15);">
+            <h4 style="font-size:0.9rem;margin-bottom:1rem;color:rgba(255,255,255,0.85);">Head Office Helpline</h4>
+            <a href="tel:9000016523" style="display:flex;align-items:center;gap:0.8rem;background:rgba(255,255,255,0.1);padding:1rem;border-radius:var(--radius-md);color:white;font-weight:600;font-size:1.05rem;">
+              <i class="fas fa-phone" style="color:var(--gold-light);"></i> 9000016523
+            </a>
+          </div>
+        </div>
+
+        <div data-aos="fade-left">
+          <div style="background:var(--white);border-radius:var(--radius-lg);padding:2.5rem;border:1px solid var(--divider);box-shadow:var(--shadow-md);">
+            <h3 style="font-family:var(--font-head);font-size:1.3rem;font-weight:700;color:var(--maroon);margin-bottom:1.5rem;">
+              <i class="fas fa-paper-plane" style="color:var(--orange);margin-right:0.5rem;"></i>
+              Enquiry Form
+            </h3>
+            <form class="enquiry-form" id="enquiryForm" novalidate>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+                <div class="form-group">
+                  <input type="text" id="formName" name="name" placeholder="Your Full Name" required />
+                  <label for="formName">Full Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="formPhone" name="phone" placeholder="Phone Number" required />
+                  <label for="formPhone">Phone Number</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="formEmail" name="email" placeholder="Email Address" required />
+                <label for="formEmail">Email Address</label>
+              </div>
+              <div class="form-group">
+                <select id="formService" name="service" required>
+                  <option value="">Select Service Type</option>
+                  <option>Savings Account</option>
+                  <option>Current Account</option>
+                  <option>Fixed Deposit</option>
+                  <option>Term Deposit</option>
+                  <option>Gold Loan</option>
+                  <option>Business Loan</option>
+                  <option>Housing Loan</option>
+                  <option>Education Loan</option>
+                  <option>Vehicle Loan</option>
+                  <option>Industrial Loan</option>
+                  <option>Safe Deposit Locker</option>
+                  <option>Debit Card</option>
+                  <option>Digital Banking / UPI</option>
+                  <option>General Enquiry</option>
+                  <option>Careers / Job Application</option>
+                  <option>Other</option>
+                </select>
+                <label for="formService">Service Type</label>
+              </div>
+              <div class="form-group">
+                <select id="formBranch" name="branch">
+                  <option value="">Select Preferred Branch (Optional)</option>
+                  <option>Feelkhana – Head Office</option>
+                  <option>Secunderabad</option>
+                  <option>Shamshergunj</option>
+                  <option>Ameerpet</option>
+                  <option>Attapur</option>
+                  <option>Nagole</option>
+                  <option>Boduppal</option>
+                  <option>Medchal</option>
+                </select>
+                <label for="formBranch">Preferred Branch</label>
+              </div>
+              <div class="form-group">
+                <textarea id="formMessage" name="message" placeholder="Describe your enquiry in detail..." rows="5" required></textarea>
+                <label for="formMessage">Your Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary full-width" id="submitEnquiry" style="padding:1.1rem;">
+                <i class="fas fa-paper-plane"></i> Submit Enquiry
+              </button>
+              <p style="font-size:0.78rem;color:var(--text-secondary);text-align:center;margin-top:1rem;">
+                <i class="fas fa-lock" style="color:var(--orange);"></i> Your information is secure and will not be shared with third parties.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="footer-logo"><img src="assets/logo-new.png" alt="Mahaveer Bank" class="footer-logo-img" /></a><p>Secure Solutions, Seamless Banking.</p><div class="rbi-tag"><i class="fas fa-shield-halved"></i> DICGC Insured · RBI Regulated</div></div>
+      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="loans.html">Loans</a></li><li><a href="deposits.html">Deposits</a></li><li><a href="branches.html">Branches</a></li></ul></div>
+      <div class="footer-links"><h4>Information</h4><ul><li><a href="about.html">About Us</a></li><li><a href="media.html">Media</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Head Office</h4><p><i class="fas fa-map-marker-alt"></i> Begum Bazar, Feelkhana, Hyderabad</p><p><i class="fas fa-phone"></i><a href="tel:9000016523">9000016523</a></p></div>
+    </div></div></div>
+    <div class="footer-bottom"><div class="container"><p>© 2025 Mahaveer Co-operative Urban Bank Ltd. All rights reserved.</p><p>Designed by <a href="#" style="color:#E5A22A;">F1RSTLOOK Digital</a></p></div></div>
+  </footer>
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

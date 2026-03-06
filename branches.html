@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahaveer Bank Branches – Feelkhana, Secunderabad, Ameerpet, Attapur, Nagole, Boduppal, Medchal, Shamshergunj. Find our nearest branch in Hyderabad." />
+  <title>Branches | Mahaveer Co-operative Urban Bank Ltd.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-new.png" alt="Mahaveer Bank" class="nav-logo-img" />
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown"><a href="loans.html" class="nav-link dropdown-trigger">Loans <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="loans.html#gold-loan">Gold Loan</a><a href="loans.html#business-loan">Business Loan</a></div></div>
+        <div class="nav-dropdown"><a href="deposits.html" class="nav-link dropdown-trigger">Deposits <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="deposits.html#term-deposits">Term Deposits</a></div></div>
+        <a href="accounts.html" class="nav-link">Accounts</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="branches.html" class="nav-link active">Branches</a>
+        <a href="media.html" class="nav-link">Media</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enquiry.html" class="nav-btn-cta">Enquiry</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Branches</span></div>
+      <h1>Our Branch Network</h1>
+      <p>8 conveniently located branches across Hyderabad and Secunderabad to serve you better.</p>
+    </div>
+  </section>
+
+  <section class="section" id="branches-main">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">Our Branches</h2>
+        <p class="section-subtitle">Tap on "Get Directions" to navigate to your nearest branch.</p>
+      </div>
+      <div class="branches-detail-grid">
+        <!-- Each Branch -->
+        <div class="branch-detail-card" data-aos="fade-up">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Feelkhana Hyderabad')">
+            <i class="fas fa-map-location-dot"></i>
+            <span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3><i class="fas fa-star" style="color:var(--gold);margin-right:0.4rem;font-size:0.8rem;"></i> Feelkhana – Head Office</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Begum Bazar, Feelkhana, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:9000016523">9000016523</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="100">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Secunderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Secunderabad Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Secunderabad, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:9154755840">9154755840</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="200">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Shamshergunj Hyderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Shamshergunj Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Shamshergunj, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:9154755842">9154755842</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="300">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Ameerpet Hyderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Ameerpet Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Ameerpet, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:9154755843">9154755843</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="400">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Attapur Hyderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Attapur Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Attapur, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:9154755838">9154755838</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="500">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Nagole Hyderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Nagole Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Nagole, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:8885028653">8885028653</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="600">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Boduppal Hyderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Boduppal Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Boduppal, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:9154755839">9154755839</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="branch-detail-card" data-aos="fade-up" data-delay="700">
+          <div class="branch-map-placeholder" onclick="openMap('Mahaveer Bank Medchal Hyderabad')">
+            <i class="fas fa-map-location-dot"></i><span>Click for Directions</span>
+          </div>
+          <div class="branch-detail-body">
+            <h3>Medchal Branch</h3>
+            <div class="branch-info">
+              <div class="branch-info-item"><i class="fas fa-map-marker-alt"></i><span>Medchal, Hyderabad</span></div>
+              <div class="branch-info-item"><i class="fas fa-phone"></i><a href="tel:8885028656">8885028656</a></div>
+              <div class="branch-info-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 4:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCH TIMINGS NOTICE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="rbi-notice" style="max-width:700px;margin:0 auto;" data-aos="fade-up">
+        <div class="rbi-icon"><i class="fas fa-clock"></i></div>
+        <div class="rbi-text">
+          <strong>Branch Timings:</strong> All branches are open <strong>Monday to Saturday, 10:00 AM – 4:00 PM</strong>. Closed on Sundays and public holidays. For emergencies, please contact the helpline numbers listed above.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="footer-logo"><img src="assets/logo-new.png" alt="Mahaveer Bank" class="footer-logo-img" /></a><p>Secure Solutions, Seamless Banking.</p><div class="rbi-tag"><i class="fas fa-shield-halved"></i> DICGC Insured · RBI Regulated</div></div>
+      <div class="footer-links"><h4>Branches</h4><ul><li><a href="#">Feelkhana</a></li><li><a href="#">Secunderabad</a></li><li><a href="#">Ameerpet</a></li><li><a href="#">Attapur</a></li></ul></div>
+      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="loans.html">Loans</a></li><li><a href="deposits.html">Deposits</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Head Office</h4><p><i class="fas fa-map-marker-alt"></i> Begum Bazar, Feelkhana, Hyderabad</p><p><i class="fas fa-phone"></i><a href="tel:9000016523">9000016523</a></p></div>
+    </div></div></div>
+    <div class="footer-bottom"><div class="container"><p>© 2025 Mahaveer Co-operative Urban Bank Ltd. All rights reserved.</p><p>Designed by <a href="#" style="color:#E5A22A;">F1RSTLOOK Digital</a></p></div></div>
+  </footer>
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+  <script>
+    function openMap(query) {
+      window.open('https://www.google.com/maps/search/' + encodeURIComponent(query), '_blank');
+    }
+  </script>
+</body>
+</html>

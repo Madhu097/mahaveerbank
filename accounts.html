@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Open a Savings or Current Account at Mahaveer Co-operative Urban Bank. Simple KYC, great interest rates." />
+  <title>Accounts | Mahaveer Co-operative Urban Bank Ltd.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-new.png" alt="Mahaveer Bank" class="nav-logo-img" />
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown"><a href="loans.html" class="nav-link dropdown-trigger">Loans <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="loans.html#gold-loan">Gold Loan</a><a href="loans.html#business-loan">Business Loan</a><a href="loans.html#housing-loan">Housing Loan</a></div></div>
+        <div class="nav-dropdown"><a href="deposits.html" class="nav-link dropdown-trigger">Deposits <i class="fas fa-chevron-down"></i></a><div class="dropdown-menu"><a href="deposits.html#term-deposits">Term Deposits</a><a href="deposits.html#fixed-deposits">Fixed Deposits</a></div></div>
+        <a href="accounts.html" class="nav-link active">Accounts</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="branches.html" class="nav-link">Branches</a>
+        <a href="media.html" class="nav-link">Media</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enquiry.html" class="nav-btn-cta">Enquiry</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Accounts</span></div>
+      <h1>Bank Accounts</h1>
+      <p>Open a savings or current account and begin your journey to financial growth.</p>
+    </div>
+  </section>
+
+  <section class="section" id="accounts-main">
+    <div class="container">
+      <div class="accounts-tabs" id="accountsTabs">
+        <button class="account-tab active" data-tab="savings-panel" id="savingsTab">
+          <i class="fas fa-piggy-bank"></i> Savings Account
+        </button>
+        <button class="account-tab" data-tab="current-panel" id="currentTab">
+          <i class="fas fa-briefcase"></i> Current Account
+        </button>
+      </div>
+
+      <!-- SAVINGS PANEL -->
+      <div class="account-panel active" id="savings-panel">
+        <div class="loan-detail-grid">
+          <div>
+            <div class="loan-item" id="savings" data-aos="fade-up">
+              <div class="loan-item-header">
+                <div class="loan-item-icon"><i class="fas fa-piggy-bank"></i></div>
+                <div><h2>Savings Account</h2><p>Where every deposit builds a stronger financial future.</p></div>
+              </div>
+              <p>A Mahaveer Bank Savings Account is the safest way to grow your money while keeping it accessible. Earn attractive interest on your daily balance while enjoying full banking convenience.</p>
+              <div class="loan-benefits">
+                <div class="benefit-item"><i class="fas fa-percent"></i><div><strong>Attractive Interest</strong><span>Earn interest on your balance</span></div></div>
+                <div class="benefit-item"><i class="fas fa-credit-card"></i><div><strong>Debit Card</strong><span>Free RuPay/ATM debit card</span></div></div>
+                <div class="benefit-item"><i class="fas fa-mobile-alt"></i><div><strong>Digital Access</strong><span>UPI & digital payment support</span></div></div>
+                <div class="benefit-item"><i class="fas fa-globe"></i><div><strong>Nomination</strong><span>Easy nominee registration</span></div></div>
+              </div>
+              <table class="info-table">
+                <tr><td>Minimum Balance</td><td>₹500 (as applicable)</td></tr>
+                <tr><td>Interest Rate</td><td>As per RBI guidelines</td></tr>
+                <tr><td>Debit Card</td><td>Provided on request</td></tr>
+                <tr><td>Documents</td><td>Aadhaar, PAN, 2 Photos</td></tr>
+                <tr><td>Age Eligibility</td><td>18+ years (Minor with guardian)</td></tr>
+              </table>
+              <a href="enquiry.html" class="btn btn-primary apply-loan-btn"><i class="fas fa-user-plus"></i> Open Savings Account</a>
+            </div>
+          </div>
+          <div>
+            <div class="sidebar-widget" data-aos="fade-left">
+              <h3>Documents Required</h3>
+              <ul>
+                <li><i class="fas fa-id-card"></i><span>Aadhaar Card</span></li>
+                <li><i class="fas fa-file-invoice"></i><span>PAN Card</span></li>
+                <li><i class="fas fa-camera"></i><span>2 Passport Size Photos</span></li>
+                <li><i class="fas fa-home"></i><span>Address Proof</span></li>
+              </ul>
+            </div>
+            <div class="sidebar-cta" data-aos="fade-left" data-delay="100">
+              <h3>Open Account Today</h3>
+              <p>Visit your nearest branch or send us an enquiry.</p>
+              <a href="enquiry.html" class="btn btn-primary">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CURRENT PANEL -->
+      <div class="account-panel" id="current-panel">
+        <div class="loan-detail-grid">
+          <div>
+            <div class="loan-item" id="current" data-aos="fade-up">
+              <div class="loan-item-header">
+                <div class="loan-item-icon"><i class="fas fa-briefcase"></i></div>
+                <div><h2>Current Account</h2><p>The foundation for seamless business banking.</p></div>
+              </div>
+              <p>Designed for businesses, traders, and professionals, the Mahaveer Bank Current Account provides unlimited transactions with no restrictions — perfect for managing your business finances efficiently.</p>
+              <div class="loan-benefits">
+                <div class="benefit-item"><i class="fas fa-infinity"></i><div><strong>Unlimited Transactions</strong><span>No cap on daily transactions</span></div></div>
+                <div class="benefit-item"><i class="fas fa-money-check-alt"></i><div><strong>Cheque Book</strong><span>Free cheque book facility</span></div></div>
+                <div class="benefit-item"><i class="fas fa-chart-bar"></i><div><strong>Business Ready</strong><span>Ideal for all business types</span></div></div>
+                <div class="benefit-item"><i class="fas fa-credit-card"></i><div><strong>Debit Card</strong><span>Business debit card available</span></div></div>
+              </div>
+              <table class="info-table">
+                <tr><td>Minimum Balance</td><td>₹2,000 (as applicable)</td></tr>
+                <tr><td>Transactions</td><td>Unlimited</td></tr>
+                <tr><td>Cheque Book</td><td>Provided</td></tr>
+                <tr><td>Documents</td><td>KYC + Business Proof</td></tr>
+                <tr><td>Eligible</td><td>Businesses, Firms, Professionals</td></tr>
+              </table>
+              <a href="enquiry.html" class="btn btn-primary apply-loan-btn"><i class="fas fa-user-plus"></i> Open Current Account</a>
+            </div>
+          </div>
+          <div>
+            <div class="sidebar-widget" data-aos="fade-left">
+              <h3>Documents Required</h3>
+              <ul>
+                <li><i class="fas fa-id-card"></i><span>Proprietor / Partner KYC</span></li>
+                <li><i class="fas fa-file-invoice"></i><span>Business Registration Proof</span></li>
+                <li><i class="fas fa-camera"></i><span>2 Passport Size Photos</span></li>
+                <li><i class="fas fa-home"></i><span>Business Address Proof</span></li>
+              </ul>
+            </div>
+            <div class="sidebar-cta" data-aos="fade-left" data-delay="100">
+              <h3>Grow Your Business</h3>
+              <p>Open a current account for your business today!</p>
+              <a href="enquiry.html" class="btn btn-primary">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="footer-logo"><img src="assets/logo-new.png" alt="Mahaveer Bank" class="footer-logo-img" /></a><p>Secure Solutions, Seamless Banking.</p><div class="rbi-tag"><i class="fas fa-shield-halved"></i> DICGC Insured · RBI Regulated</div></div>
+      <div class="footer-links"><h4>Accounts</h4><ul><li><a href="#savings">Savings Account</a></li><li><a href="#current">Current Account</a></li></ul></div>
+      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="loans.html">Loans</a></li><li><a href="deposits.html">Deposits</a></li><li><a href="branches.html">Branches</a></li></ul></div>
+      <div class="footer-contact"><h4>Head Office</h4><p><i class="fas fa-map-marker-alt"></i> Begum Bazar, Feelkhana, Hyderabad</p><p><i class="fas fa-phone"></i><a href="tel:9000016523">9000016523</a></p></div>
+    </div></div></div>
+    <div class="footer-bottom"><div class="container"><p>© 2025 Mahaveer Co-operative Urban Bank Ltd. All rights reserved.</p><p>Designed by <a href="#" style="color:#E5A22A;">F1RSTLOOK Digital</a></p></div></div>
+  </footer>
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
